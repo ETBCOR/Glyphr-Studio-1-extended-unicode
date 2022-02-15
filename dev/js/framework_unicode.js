@@ -145,7 +145,7 @@
 			}
 		}
 
-		if(str.length > 4) return false;
+		if(str.length > 8) return false;
 
 		for(var c=0; c<str.length; c++){
 			if(green.indexOf(str.charAt(c)) === -1) return false;

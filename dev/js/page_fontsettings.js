@@ -89,7 +89,7 @@
 					'You can add and edit custom glyph ranges below, or you can '+
 					'<span class="textaction" onclick="showGlyphRangeChooser();">launch the Glyph Range Chooser</span> '+
 					'to browse all the ranges in Unicode.  '+
-					'Custom ranges are inclusive, and must be above <pre>0x0250</pre> and below <pre>0xFFFF</pre>.'+
+					'Custom ranges are inclusive, and must be above <pre>0x0250</pre> and below <pre>0x10FFFF</pre>.'+
 					'<h3>Add a custom range</h3>'+
 					'<table class="settingstable addcustomrange"><tr>'+
 						'<td>name:<br><input type="text" id="customrangename"></td>'+
@@ -213,8 +213,8 @@
 			newrange.begin = Math.max(newrange.begin, (_UI.glyphrange.latinextendedb.end+1));
 			newrange.end = Math.max(newrange.end, (_UI.glyphrange.latinextendedb.end+2));
 		}
-		newrange.begin = Math.min(newrange.begin, 0xFFFE);
-		newrange.end = Math.min(newrange.end, 0xFFFF);
+		newrange.begin = Math.min(newrange.begin, 0x0010FFFE);
+		newrange.end = Math.min(newrange.end, 0x0010FFFEF);
 		
 		// format
 		newrange.name = newrange.name || ('Glyph Range ' + (_GP.projectsettings.glyphrange.custom.length + 1));

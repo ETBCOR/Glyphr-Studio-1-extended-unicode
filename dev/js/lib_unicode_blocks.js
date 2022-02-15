@@ -161,5 +161,6 @@ _UI.unicodeBlocks = [
     {begin: 0xFE50, end: 0xFE6F, name: 'Small Form Variants'},
     {begin: 0xFE70, end: 0xFEFF, name: 'Arabic Presentation Forms-B'},
     {begin: 0xFF00, end: 0xFFEF, name: 'Halfwidth and Fullwidth Forms'},
-    {begin: 0xFFF0, end: 0xFFFF, name: 'Specials'}
+    {begin: 0xFFF0, end: 0xFFFF, name: 'Specials'},
+    {begin: 0xF1900, end: 0xF19FF, name: 'sitelen pona'}
 ];
